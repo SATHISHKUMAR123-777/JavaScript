@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="local.css" />
+</head>
+
+<body onload="readall()">
+    <div class="container">
+        <div class="form_container">
+
+            <form class="create_form">
+                <input type="text" class="names" placeholder="Enter the Name" />
+                <input type="email" class="emails" placeholder="Enter the Email_Id" />
+                <button type="button" onclick="add()">Create</button>
+            </form>
+
+            <form class="update_form">
+                <input type="text" hidden class="id" />
+                <input type="text" class="uname" />
+                <input type="email" class="uemail" />
+                <button type="button" onclick="update()">Update</button>
+            </form>
+
+            <div class="add">
+                <button onclick="Create()">Add +</button>
+            </div>
+
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </thead>
+
+                <tbody class="data_table">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="local.js"></script>
+
+</body>
+
+</html>
